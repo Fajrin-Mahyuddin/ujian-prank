@@ -32,7 +32,7 @@
             </div>
             
             <button type="submit" class="btn btn-primary">Update</button>
-            <a href="{{url('dashboard-user')}}" class="btn btn-info">Batal</a>
+            <a href="{{url('userDashboard')}}" class="btn btn-info">Batal</a>
 
         </form>
     </div>

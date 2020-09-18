@@ -54,7 +54,6 @@ Route::get('404', function() {
     return view('404');
 });
 
-
 Route::get('logout', function() {
     Auth::logout();
     return redirect('/');
