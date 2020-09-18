@@ -29,6 +29,6 @@ class UserController extends Controller
             'alamat' => $request->alamat,
             'password' => bcrypt($request->password),
         ]);
-        return redirect('dashboard-user')->with(['msg'=> 'Data Berhasil Di update !']);
+        return redirect('userDashboard');
     }
 }

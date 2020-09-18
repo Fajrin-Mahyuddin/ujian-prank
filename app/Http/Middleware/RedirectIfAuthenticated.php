@@ -22,7 +22,7 @@ class RedirectIfAuthenticated
             if(Auth::user()->level === 'admin') {
                 return redirect('dashboard');
             } else {
-                return redirect('dashboard-user');
+                return redirect('userDashboard');
             }
         }
 
