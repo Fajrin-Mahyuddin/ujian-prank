@@ -5,7 +5,11 @@
     <h3>Daftar User</h3>
     <a href="{{url('register')}}" class="btn btn-sm btn-success">Register</a>
     <a href="{{route('logout')}}" class="btn btn-sm btn-danger">logout</a>
-   
+    @if(session('msg'))
+        <div class="alert alert-info">
+            {{session('msg')}}
+        </div>
+    @endif
     <table class="table table-borderless">
       <thead>
       <tr>

@@ -14,7 +14,7 @@ class UserController extends Controller
         return view('userDashboard')->with(['users' => $data]);
     }
 
-    public function editPage()
+    public function ubah()
     {
         $data = User::where('id', Auth::id())->first();
         return view('me-edit')->with(['data' => $data]);

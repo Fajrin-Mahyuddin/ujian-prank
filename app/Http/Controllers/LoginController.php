@@ -33,7 +33,7 @@ class LoginController extends Controller
                 if(Auth::user()->level === 'admin') {
                     return redirect('dashboard');
                 } else {
-                    return redirect('dashboard-user');
+                    return redirect('userDashboard');
                 }
             } else {
                 Auth::logout();
