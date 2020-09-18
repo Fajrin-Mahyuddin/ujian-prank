@@ -11,7 +11,7 @@ class UserController extends Controller
     public function index()
     {
         $data = User::where('id', Auth::id())->first();
-        return view('dashboard-user')->with(['data' => $data]);
+        return view('userDashboard')->with(['users' => $data]);
     }
 
     public function editPage()

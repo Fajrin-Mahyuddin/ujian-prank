@@ -45,8 +45,8 @@ Route::group(['middleware' => ['auth', 'level:admin']], function() {
 });
 
 Route::group(['middleware' => ['auth', 'level:user']], function() {
-    Route::get('/userDashboard', 'User@index');
-    Route::get('/MyProfile', 'User@ubah');
+    Route::get('/userDashboard', 'UserController@index');
+    Route::get('/MyProfile', 'UserController@ubah');
     Route::post('/MeEditPost', 'UserController@ubahPost')->name('MeEditPost');
 });
 

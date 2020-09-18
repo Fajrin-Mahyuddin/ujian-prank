@@ -13,8 +13,8 @@
 
 
 -- Membuang struktur basisdata untuk db_reg_online
-CREATE DATABASE IF NOT EXISTS `db_reg_online` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `db_reg_online`;
+-- CREATE DATABASE IF NOT EXISTS `db_reg_online` /*!40100 DEFAULT CHARACTER SET latin1 */;
+-- USE `db_reg_online`;
 
 -- membuang struktur untuk table db_reg_online.failed_jobs
 CREATE TABLE IF NOT EXISTS `failed_jobs` (
